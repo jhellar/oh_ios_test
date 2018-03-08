@@ -98,6 +98,6 @@ node('ios') {
     }
 
     stage('Archive') {
-        archiveArtifacts "ios/build/${BUILD_CONFIG}-${SDK}/${OUTPUT_FILE_NAME}"
+        archiveArtifacts "build/${BUILD_CONFIG}-${SDK}/${OUTPUT_FILE_NAME}"
     }
 }
